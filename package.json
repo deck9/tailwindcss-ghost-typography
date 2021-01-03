@@ -3,7 +3,10 @@
     "version": "0.0.1",
     "description": "A Tailwind CSS plugin that adds styling for HTML elements served by the Ghost CMS",
     "main": "src/index.js",
-    "repository": "https://github.com/Deck9/tailwindcss-ghost-typography",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Deck9/tailwindcss-ghost-typography.git"
+    },
     "license": "MIT",
     "publishConfig": {
         "access": "public"
@@ -28,5 +31,14 @@
         "lodash.isplainobject": "^4.0.6",
         "lodash.merge": "^4.6.2",
         "lodash.uniq": "^4.5.0"
-    }
+    },
+    "bugs": {
+        "url": "https://github.com/Deck9/tailwindcss-ghost-typography/issues"
+    },
+    "homepage": "https://github.com/Deck9/tailwindcss-ghost-typography#readme",
+    "keywords": [
+        "tailwindcss",
+        "tailwindcss-plugin"
+    ],
+    "author": ""
 }
