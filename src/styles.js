@@ -109,6 +109,7 @@ module.exports = (theme) => ({
 
                 '[class~="kg-card"] a': {
                     color: theme('colors.gray.100'),
+                    textDecoration: 'none',
                 },
             }
         ]
