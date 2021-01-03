@@ -16,6 +16,7 @@ module.exports = plugin.withOptions(
         return function ({ addComponents, theme, variants }) {
             const DEFAULT_MODIFIERS = [
                 'DEFAULT',
+                'lg',
                 'dark',
             ]
             modifiers = modifiers === undefined ? DEFAULT_MODIFIERS : modifiers

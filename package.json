@@ -1,6 +1,6 @@
 {
     "name": "@deck9/tailwindcss-ghost-typography",
-    "version": "0.0.4",
+    "version": "0.0.5",
     "description": "A Tailwind CSS plugin that adds styling for HTML elements served by the Ghost CMS",
     "main": "src/index.js",
     "repository": {
