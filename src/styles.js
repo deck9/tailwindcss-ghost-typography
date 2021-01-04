@@ -15,6 +15,10 @@ module.exports = (theme) => ({
                     color: theme('colors.gray.700'),
                 },
 
+                '[class~="kg-image-card"]': {
+                    background: 'none',
+                },
+
                 '[class~="kg-card"] a': {
                     color: theme('colors.gray.900'),
                 }
@@ -29,8 +33,20 @@ module.exports = (theme) => ({
                     textDecoration: 'none',
                 },
 
+                '[class~="kg-card"] a:hover': {
+                    textDecoration: 'none',
+                },
+
                 '[class~="kg-card"] img': {
                     margin: '0',
+                },
+
+                '[class~="kg-image-card"]': {
+                    textAlign: 'center',
+                },
+
+                '[class~="kg-image-card"] [class~="kg-image"]': {
+                    margin: '0 auto',
                 },
 
                 '[class~="kg-card"] [class~="kg-embed-card"]': {
@@ -79,6 +95,10 @@ module.exports = (theme) => ({
                     fontSize: em(14, 16),
                 },
 
+                '[class~="kg-card"] [class~="kg-bookmark-container"] [class~="kg-bookmark-content"] [class~="kg-bookmark-metadata"] [class~="kg-bookmark-icon"]': {
+                    height: theme('spacing.8'),
+                },
+
                 '[class~="kg-card"] [class~="kg-bookmark-container"] [class~="kg-bookmark-content"] [class~="kg-bookmark-metadata"] > *:not(:last-child)': {
                     marginRight: theme('spacing.2'),
                 },
@@ -111,8 +131,20 @@ module.exports = (theme) => ({
                     textDecoration: 'none',
                 },
 
+                '[class~="kg-card"] a:hover': {
+                    textDecoration: 'none',
+                },
+
                 '[class~="kg-card"] img': {
                     margin: '0',
+                },
+
+                '[class~="kg-image-card"]': {
+                    textAlign: 'center',
+                },
+
+                '[class~="kg-image-card"] [class~="kg-image"]': {
+                    margin: '0 auto',
                 },
 
                 '[class~="kg-card"] [class~="kg-embed-card"]': {
@@ -162,6 +194,10 @@ module.exports = (theme) => ({
                     fontSize: em(14, 16),
                 },
 
+                '[class~="kg-card"] [class~="kg-bookmark-container"] [class~="kg-bookmark-content"] [class~="kg-bookmark-metadata"] [class~="kg-bookmark-icon"]': {
+                    height: theme('spacing.8'),
+                },
+
                 '[class~="kg-card"] [class~="kg-bookmark-container"] [class~="kg-bookmark-content"] [class~="kg-bookmark-metadata"] > *:not(:last-child)': {
                     marginRight: theme('spacing.2'),
                 },
@@ -189,6 +225,10 @@ module.exports = (theme) => ({
                 '[class~="kg-card"]': {
                     background: theme('colors.gray.900'),
                     color: theme('colors.gray.100'),
+                },
+
+                '[class~="kg-image-card"]': {
+                    background: 'none',
                 },
 
                 '[class~="kg-card"] a': {
