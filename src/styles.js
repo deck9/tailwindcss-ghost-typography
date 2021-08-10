@@ -19,11 +19,16 @@ module.exports = (theme) => ({
                     background: 'none',
                 },
 
+                '[class~="kg-gallery-card"]': {
+                    background: 'none',
+                },
+
                 '[class~="kg-card"] a': {
                     color: theme('colors.gray.900'),
                 }
             },
             {
+                // #region default-card
                 '[class~="kg-card"]': {
                     padding: `${theme('spacing.6')}`,
                     borderRadius: theme('borderRadius.lg'),
@@ -40,7 +45,9 @@ module.exports = (theme) => ({
                 '[class~="kg-card"] img': {
                     margin: '0',
                 },
+                // #endregion
 
+                // #region image
                 '[class~="kg-image-card"]': {
                     textAlign: 'center',
                 },
@@ -48,7 +55,42 @@ module.exports = (theme) => ({
                 '[class~="kg-image-card"] [class~="kg-image"]': {
                     margin: '0 auto',
                 },
+                // #endregion
 
+                // #region gallery
+                '[class~="kg-gallery-card"]': {
+                    padding: '0',
+                },
+
+                '[class~="kg-gallery-card"] figcaption': {
+                    padding: theme('spacing.3'),
+                    textAlign: 'center',
+                    fontSize: theme('fontSize.sm'),
+                    color: theme('colors.')
+                },
+
+                '[class~="kg-card"] [class~="kg-gallery-container"] [class~="kg-gallery-row"]': {
+                    display: 'flex',
+                    flexWrap: 'nowrap',
+                    marginBottom: theme('spacing.4'),
+                },
+
+                '[class~="kg-card"] [class~="kg-gallery-container"] [class~="kg-gallery-row"] [class~="kg-gallery-image"]': {
+                    borderRadius: theme('borderRadius.lg'),
+                    overflow: 'hidden',
+                    marginLeft: theme('spacing.2'),
+                    marginRight: theme('spacing.2'),
+                },
+
+                '[class~="kg-card"] [class~="kg-gallery-container"] [class~="kg-gallery-row"] [class~="kg-gallery-image"] img': {
+                    objectPosition: "center",
+                    objectFit: "cover",
+                    height: "100%",
+                    width: "100%",
+                },
+                //  #endregion
+
+                // #region embed-card
                 '[class~="kg-card"] [class~="kg-embed-card"]': {
                     position: 'relative',
                     overflow: 'hidden',
@@ -65,7 +107,9 @@ module.exports = (theme) => ({
                     right: '0',
                     bottom: '0',
                 },
+                // #endregion
 
+                // #region bookmark
                 '[class~="kg-card"] [class~="kg-bookmark-container"]': {
                     display: 'flex',
                     alignItems: 'center',
@@ -116,6 +160,7 @@ module.exports = (theme) => ({
                     width: '100%',
                     borderRadius: theme('borderRadius.lg'),
                 }
+                // #endregion
             }
         ]
     },
@@ -145,6 +190,11 @@ module.exports = (theme) => ({
 
                 '[class~="kg-image-card"] [class~="kg-image"]': {
                     margin: '0 auto',
+                },
+
+                '[class~="kg-gallery-card"]': {
+                    padding: '0',
+                    background: 'transparent'
                 },
 
                 '[class~="kg-card"] [class~="kg-embed-card"]': {
@@ -228,6 +278,10 @@ module.exports = (theme) => ({
                 },
 
                 '[class~="kg-image-card"]': {
+                    background: 'none',
+                },
+
+                '[class~="kg-gallery-card"]': {
                     background: 'none',
                 },
 
